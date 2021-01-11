@@ -1,0 +1,16 @@
+title: Health
+description: 'Idj, but later i do it. '
+template:
+  repo: health-template
+  name: health
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
